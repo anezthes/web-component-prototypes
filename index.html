@@ -25,48 +25,117 @@
         --lumo-primary-color: hsl(214, 90%, 47%) !important;
         --lumo-primary-text-color: hsl(214, 90%, 47%) !important;
         --lumo-success-color: hsl(145, 80%, 29%) !important;
+        --lumo-success-text-color: hsl(145, 100%, 25%) !important;
+        --lumo-error-color: hsl(3, 100%, 46%) !important;
+        --lumo-error-text-color: hsl(3, 92%, 45%) !important;
+
+        font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size, var(--lumo-font-size-m));
+        line-height: var(--lumo-line-height-m);
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1,
+      h2 {
+        font-weight: 600;
+        line-height: var(--lumo-line-height-xs);
+        margin: var(--lumo-space-m) 0;
+      }
+
+      h1 {
+        font-size: var(--lumo-font-size-xxxl);
+      }
+
+      h2 {
+        font-size: var(--lumo-font-size-xxl);
+      }
+
+      hr {
+        background-color: var(--lumo-contrast-10pct);
+        border: 0;
+        height: 1px;
+        margin: var(--lumo-space-s) 0;
+      }
+
+      section + section {
+        margin-top: var(--lumo-space-m);
+      }
+
+      .custom-radio-option {
+        align-items: flex-start;
+        display: flex;
+      }
+      .custom-radio-option img {
+        border-radius: 50%;
+      }
+      .custom-radio-option div {
+        display: flex;
+        flex-direction: column;
+        margin-left: var(--lumo-space-s);
+      }
+      .custom-radio-option div span:first-child {
+        font-weight: 500;
+      }
+      .custom-radio-option div span:last-child {
+        color: var(--lumo-secondary-text-color);
+        font-size: var(--lumo-font-size-s);
       }
     </style>
   </head>
 
   <body>
-    <h1>Alternative Vaadin Components</h1>
+    <h1>Vaadin: Web Component Prototypes</h1>
     <section>
       <h2>Buttons</h2>
-      <vaadin-button>Secondary</vaadin-button>
-      <hr />
-      <vaadin-button theme="primary">Primary</vaadin-button>
-      <vaadin-button theme="tertiary">Tertiary</vaadin-button>
-      <vaadin-button theme="tertiary-inline">Tertiary Inline</vaadin-button>
-      <hr />
-      <vaadin-button theme="contrast primary">Primary</vaadin-button>
-      <vaadin-button theme="contrast">Secondary</vaadin-button>
-      <vaadin-button theme="contrast tertiary">Tertiary</vaadin-button>
-      <hr />
-      <vaadin-button theme="success primary">Primary</vaadin-button>
-      <vaadin-button theme="success">Secondary</vaadin-button>
-      <vaadin-button theme="success tertiary">Tertiary</vaadin-button>
-      <hr />
-      <vaadin-button theme="error primary">Primary</vaadin-button>
-      <vaadin-button theme="error">Secondary</vaadin-button>
-      <vaadin-button theme="error tertiary">Tertiary</vaadin-button>
-      <hr />
-      <vaadin-button theme="large">Large</vaadin-button>
-      <vaadin-button theme="small">Small</vaadin-button>
-      <hr />
-      <vaadin-button><iron-icon icon="lumo:edit" slot="prefix"></iron-icon>Small</vaadin-button>
-      <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Small</vaadin-button>
+      <section>
+        <vaadin-button>Secondary</vaadin-button>
+      </section>
+      <section>
+        <vaadin-button theme="primary">Primary</vaadin-button>
+        <vaadin-button theme="tertiary">Tertiary</vaadin-button>
+        <vaadin-button theme="tertiary-inline">Tertiary Inline</vaadin-button>
+      </section>
+      <section>
+        <vaadin-button theme="contrast primary">Primary</vaadin-button>
+        <vaadin-button theme="contrast">Secondary</vaadin-button>
+        <vaadin-button theme="contrast tertiary">Tertiary</vaadin-button>
+      </section>
+      <section>
+        <vaadin-button theme="success primary">Primary</vaadin-button>
+        <vaadin-button theme="success">Secondary</vaadin-button>
+        <vaadin-button theme="success tertiary">Tertiary</vaadin-button>
+      </section>
+      <section>
+        <vaadin-button theme="error primary">Primary</vaadin-button>
+        <vaadin-button theme="error">Secondary</vaadin-button>
+        <vaadin-button theme="error tertiary">Tertiary</vaadin-button>
+      </section>
+      <section>
+        <vaadin-button theme="large">Large</vaadin-button>
+        <vaadin-button theme="small">Small</vaadin-button>
+      </section>
+      <section>
+        <vaadin-button><iron-icon icon="lumo:edit" slot="prefix"></iron-icon>Small</vaadin-button>
+        <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Small</vaadin-button>
+      </section>
     </section>
+    <hr />
     <section>
       <h2>Checkboxes</h2>
-      <vaadin-checkbox>Single checkbox</vaadin-checkbox>
-      <hr />
-      <vaadin-checkbox-group legend="Which consoles do you own?">
-        <vaadin-checkbox>PlayStation</vaadin-checkbox>
-        <vaadin-checkbox>Xbox</vaadin-checkbox>
-        <vaadin-checkbox>Wii</vaadin-checkbox>
-      </vaadin-checkbox-group>
+      <section>
+        <vaadin-checkbox>Single checkbox</vaadin-checkbox>
+      </section>
+      <section>
+        <vaadin-checkbox-group legend="Which consoles do you own?">
+          <vaadin-checkbox>PlayStation</vaadin-checkbox>
+          <vaadin-checkbox>Xbox</vaadin-checkbox>
+          <vaadin-checkbox>Wii</vaadin-checkbox>
+        </vaadin-checkbox-group>
+      </section>
     </section>
+    <hr />
     <section>
       <h2>Radio buttons</h2>
       <vaadin-radio-group-1 legend="Which science fiction media franchise do you prefer?" options='["Star Wars", "Star Trek", "Stargate"]'> </vaadin-radio-group-1>

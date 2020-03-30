@@ -11,6 +11,7 @@ class VaadinRadioGroup2 extends LitElement {
   }
   constructor() {
     super();
+    this.name = '';
     this.legend = '';
     this.options = 0;
     this.optionIndexes = [];
@@ -25,10 +26,11 @@ class VaadinRadioGroup2 extends LitElement {
         ${this.optionIndexes.map(
           (i) => html`
             <label>
-              <input type="radio" name="option" />
-              <span>${i}</span>
+              <input type="radio" name=${this.name} />
+              <span>
+                <slot name="option-${i + 1}"></slot>
+              </span>
             </label>
-            <slot name="child-${i}"></slot>
           `
         )}
       </fieldset>
@@ -36,7 +38,6 @@ class VaadinRadioGroup2 extends LitElement {
   }
 
   updated(props) {
-    debugger;
     props.forEach((_, name) => {
       if (name === 'options') {
         const optionIndexes = [];
