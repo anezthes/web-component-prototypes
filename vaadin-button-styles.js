@@ -1,9 +1,4 @@
-import { css } from 'lit-element';
-import '@vaadin/vaadin-lumo-styles/color.js';
-import '@vaadin/vaadin-lumo-styles/sizing.js';
-import '@vaadin/vaadin-lumo-styles/spacing.js';
-import '@vaadin/vaadin-lumo-styles/style.js';
-import '@vaadin/vaadin-lumo-styles/typography.js';
+import {css} from 'lit-element';
 
 export const vaadinButtonStyles = css`
   :host {
@@ -38,12 +33,12 @@ export const vaadinButtonStyles = css`
 
   /* Sizes */
 
-  :host([theme~="small"]) button {
+  :host([theme~='small']) button {
     --lumo-button-size: var(--lumo-size-s);
     font-size: var(--lumo-font-size-s);
   }
 
-  :host([theme~="large"]) button {
+  :host([theme~='large']) button {
     --lumo-button-size: var(--lumo-size-l);
     font-size: var(--lumo-font-size-l);
   }
@@ -55,7 +50,7 @@ export const vaadinButtonStyles = css`
     background-color: currentColor;
     border-radius: inherit;
     bottom: 0;
-    content: "";
+    content: '';
     left: 0;
     opacity: 0;
     pointer-events: none;
@@ -105,35 +100,35 @@ export const vaadinButtonStyles = css`
 
   /* Tertiary & tertiary inline */
 
-  :host([theme~="tertiary"]) button,
-  :host([theme~="tertiary-inline"]) button {
+  :host([theme~='tertiary']) button,
+  :host([theme~='tertiary-inline']) button {
     background-color: transparent;
     min-width: 0;
     transition: opacity 0.2s;
   }
 
-  :host([theme~="tertiary"]) button::before,
-  :host([theme~="tertiary-inline"]) button::before {
+  :host([theme~='tertiary']) button::before,
+  :host([theme~='tertiary-inline']) button::before {
     display: none;
   }
 
-  :host([theme~="tertiary"]) button {
+  :host([theme~='tertiary']) button {
     padding: 0 calc(var(--lumo-button-size) / 6);
   }
 
   @media (hover: hover) {
-    :host([theme*="tertiary"]) button:not(:active):hover {
+    :host([theme*='tertiary']) button:not(:active):hover {
       opacity: 0.8;
     }
   }
 
-  :host([theme~="tertiary"]) button:active,
-  :host([theme~="tertiary-inline"]) button:active {
+  :host([theme~='tertiary']) button:active,
+  :host([theme~='tertiary-inline']) button:active {
     opacity: 0.5;
     transition-duration: 0s;
   }
 
-  :host([theme~="tertiary-inline"]) button {
+  :host([theme~='tertiary-inline']) button {
     font-size: inherit;
     height: auto;
     line-height: inherit;
@@ -143,64 +138,64 @@ export const vaadinButtonStyles = css`
 
   /* Primary */
 
-  :host([theme~="primary"]) button {
+  :host([theme~='primary']) button {
     background-color: var(--lumo-primary-color);
     color: var(--lumo-primary-contrast-color);
     font-weight: 600;
     min-width: calc(var(--lumo-button-size) * 2.5);
   }
 
-  :host([theme~="primary"]) button:hover::before {
+  :host([theme~='primary']) button:hover::before {
     opacity: 0.1;
   }
 
-  :host([theme~="primary"]) button:active::before {
+  :host([theme~='primary']) button:active::before {
     background-color: var(--lumo-shade-20pct);
   }
 
   @media (pointer: coarse) {
-    :host([theme~="primary"]) button:active::before {
+    :host([theme~='primary']) button:active::before {
       background-color: var(--lumo-shade-60pct);
     }
 
-    :host([theme~="primary"]) button:not(:active):hover::before {
+    :host([theme~='primary']) button:not(:active):hover::before {
       opacity: 0;
     }
   }
 
-  :host([theme~="primary"]) button:active::after {
+  :host([theme~='primary']) button:active::after {
     opacity: 0.2;
   }
 
   /* Success */
 
-  :host([theme~="success"]) button {
+  :host([theme~='success']) button {
     color: var(--lumo-success-text-color);
   }
 
-  :host([theme~="success"][theme~="primary"]) button {
+  :host([theme~='success'][theme~='primary']) button {
     background-color: var(--lumo-success-color);
     color: var(--lumo-success-contrast-color);
   }
 
   /* Error */
 
-  :host([theme~="error"]) button {
+  :host([theme~='error']) button {
     color: var(--lumo-error-text-color);
   }
 
-  :host([theme~="error"][theme~="primary"]) button {
+  :host([theme~='error'][theme~='primary']) button {
     background-color: var(--lumo-error-color);
     color: var(--lumo-error-contrast-color);
   }
 
   /* Contrast */
 
-  :host([theme~="contrast"]) button {
+  :host([theme~='contrast']) button {
     color: var(--lumo-contrast);
   }
 
-  :host([theme~="contrast"][theme~="primary"]) button {
+  :host([theme~='contrast'][theme~='primary']) button {
     background-color: var(--lumo-contrast);
     color: var(--lumo-base-color);
   }
@@ -215,19 +210,17 @@ export const vaadinButtonStyles = css`
     width: var(--lumo-icon-size-m);
   }
 
-  [part="prefix"] {
+  [part='prefix'] {
     margin-left: calc(var(--lumo-space-xs) * -1);
-    
   }
 
-  [part="suffix"] {
-
+  [part='suffix'] {
     margin-right: calc(var(--lumo-space-xs) * -1);
   }
 
   /* Icon-only */
 
-  :host([theme~="icon"]:not([theme~="tertiary-inline"])) button {
+  :host([theme~='icon']:not([theme~='tertiary-inline'])) button {
     min-width: var(--lumo-button-size);
     padding-left: calc(var(--lumo-button-size) / 4);
     padding-right: calc(var(--lumo-button-size) / 4);
@@ -241,20 +234,20 @@ export const vaadinButtonStyles = css`
     pointer-events: none;
   }
 
-  :host([theme~="primary"]) button[disabled] {
+  :host([theme~='primary']) button[disabled] {
     background-color: var(--lumo-primary-color-50pct);
     color: var(--lumo-primary-contrast-color);
   }
 
-  :host([theme~="success"][theme~="primary"]) button[disabled] {
+  :host([theme~='success'][theme~='primary']) button[disabled] {
     background-color: var(--lumo-success-color-50pct);
   }
 
-  :host([theme~="error"][theme~="primary"]) button[disabled] {
+  :host([theme~='error'][theme~='primary']) button[disabled] {
     background-color: var(--lumo-error-color-50pct);
   }
 
-  :host([theme~="contrast"][theme~="primary"]) button[disabled] {
+  :host([theme~='contrast'][theme~='primary']) button[disabled] {
     background-color: var(--lumo-contrast-50pct);
   }
 `;

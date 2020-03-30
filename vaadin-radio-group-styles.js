@@ -1,10 +1,4 @@
-import { css } from 'lit-element';
-import '@vaadin/vaadin-lumo-styles/color.js';
-import '@vaadin/vaadin-lumo-styles/font-icons.js';
-import '@vaadin/vaadin-lumo-styles/sizing.js';
-import '@vaadin/vaadin-lumo-styles/spacing.js';
-import '@vaadin/vaadin-lumo-styles/style.js';
-import '@vaadin/vaadin-lumo-styles/typography.js';
+import {css} from 'lit-element';
 
 export const vaadinRadioGroupStyles = css`
   :host {
@@ -61,7 +55,7 @@ export const vaadinRadioGroupStyles = css`
     border-radius: 50%;
     box-sizing: border-box;
     color: transparent;
-    content: "";
+    content: '';
     flex-shrink: 0;
     font-family: lumo-icons;
     height: var(--lumo-icon-size-s);

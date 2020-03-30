@@ -1,0 +1,26 @@
+{
+  "name": "web-component-prototypes",
+  "version": "1.0.0",
+  "description": "Web Components with a focus on accessibility. Testing purposes only.",
+  "main": "vaadin-button-styles.js",
+  "dependencies": {
+    "@polymer/iron-icon": "^3.0.1",
+    "@vaadin/vaadin-lumo-styles": "^1.6.0",
+    "lit-element": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "polymer serve -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anezthes/web-component-prototypes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anezthes/web-component-prototypes/issues"
+  },
+  "homepage": "https://github.com/anezthes/web-component-prototypes#readme"
+}
