@@ -9,6 +9,7 @@ import '@vaadin/vaadin-lumo-styles/typography.js';
 export const vaadinRadioGroupStyles = css`
   :host {
     --dot-size: calc(var(--lumo-size-xs) / 4);
+    color: var(--lumo-body-text-color);
     display: inline-block;
     font-family: var(--lumo-font-family);
     font-size: var(--lumo-font-size-m);
@@ -31,6 +32,7 @@ export const vaadinRadioGroupStyles = css`
 
   label {
     align-items: center;
+    cursor: var(--lumo-clickable-cursor);
     display: inline-flex;
     min-height: var(--lumo-size-m);
   }

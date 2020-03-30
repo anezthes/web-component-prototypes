@@ -8,6 +8,7 @@ import '@vaadin/vaadin-lumo-styles/typography.js';
 
 export const vaadinCheckboxStyles = css`
   :host {
+    color: var(--lumo-body-text-color);
     display: inline-block;
     font-family: var(--lumo-font-family);
     font-size: var(--lumo-font-size-m);
@@ -17,6 +18,7 @@ export const vaadinCheckboxStyles = css`
 
   label {
     align-items: center;
+    cursor: var(--lumo-clickable-cursor);
     display: inline-flex;
     min-height: var(--lumo-size-m);
   }

@@ -1,7 +1,7 @@
 import { LitElement, html, css, property } from 'lit-element';
 import { vaadinRadioGroupStyles } from './vaadin-radio-group-styles.js';
 
-class VaadinRadioGroup extends LitElement {
+class VaadinRadioGroup1 extends LitElement {
   static get properties() { return {
     legend: { type: String },
     options: { type: Array }
@@ -31,4 +31,4 @@ class VaadinRadioGroup extends LitElement {
     `;
   }
 }
-customElements.define('vaadin-radio-group', VaadinRadioGroup);
+customElements.define('vaadin-radio-group-1', VaadinRadioGroup1);
