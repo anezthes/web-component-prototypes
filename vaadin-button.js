@@ -3,10 +3,7 @@ import { vaadinButtonStyles } from './vaadin-button-styles.js';
 
 class VaadinButton extends LitElement {
   static get styles() {
-    return [
-      vaadinButtonStyles,
-      css``
-    ]
+    return [vaadinButtonStyles, css``]
   }
   render() {
     return html`

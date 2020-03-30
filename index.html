@@ -138,31 +138,37 @@
     <hr />
     <section>
       <h2>Radio buttons</h2>
-      <vaadin-radio-group-1 legend="Which science fiction media franchise do you prefer?" options='["Star Wars", "Star Trek", "Stargate"]'> </vaadin-radio-group-1>
-      <hr />
-      <vaadin-radio-group-2 legend="Which science fiction media franchise do you prefer?" options="3" name="radio-2">
-        <div slot="option-1" class="custom-radio-option">
-          <img src="https://api.adorable.io/avatars/48/luke@adorable.io.png" />
-          <div>
-            <span>Star Wars</span>
-            <span>Luke Skywalker</span>
+      <section>
+        <vaadin-radio-group-1
+          legend="Which science fiction media franchise do you prefer?"
+          options='["Star Wars", "Star Trek", "Stargate"]'>
+        </vaadin-radio-group-1>
+      </section>
+      <section>
+        <vaadin-radio-group-2 legend="Which science fiction media franchise do you prefer?" options="3" name="radio-2">
+          <div slot="option-1" class="custom-radio-option">
+            <img src="https://api.adorable.io/avatars/48/luke@adorable.io.png" alt="Luke's avatar" />
+            <div>
+              <span>Star Wars</span>
+              <span>Luke Skywalker</span>
+            </div>
           </div>
-        </div>
-        <div slot="option-2" class="custom-radio-option">
-          <img src="https://api.adorable.io/avatars/48/picard@adorable.io.png" />
-          <div>
-            <span>Star Trek</span>
-            <span>Captain Picard</span>
+          <div slot="option-2" class="custom-radio-option">
+            <img src="https://api.adorable.io/avatars/48/picard@adorable.io.png" alt="Picard's avatar" />
+            <div>
+              <span>Star Trek</span>
+              <span>Captain Picard</span>
+            </div>
           </div>
-        </div>
-        <div slot="option-3" class="custom-radio-option">
-          <img src="https://api.adorable.io/avatars/48/jack@adorable.io.png" />
-          <div>
-            <span>Stargate</span>
-            <span>Colonel Jack O'Neill</span>
+          <div slot="option-3" class="custom-radio-option">
+            <img src="https://api.adorable.io/avatars/48/jack@adorable.io.png" alt="Jack's avatar" />
+            <div>
+              <span>Stargate</span>
+              <span>Colonel Jack O'Neill</span>
+            </div>
           </div>
-        </div>
-      </vaadin-radio-group-2>
+        </vaadin-radio-group-2>
+      </section>
     </section>
   </body>
 </html>

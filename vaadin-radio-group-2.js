@@ -4,15 +4,16 @@ import {vaadinRadioGroupStyles} from './vaadin-radio-group-styles.js';
 class VaadinRadioGroup2 extends LitElement {
   static get properties() {
     return {
-      legend: {type: String},
-      options: {type: Number},
-      optionIndexes: {type: Array}
+      legend: { type: String },
+      name: { type: String },
+      options: { type: Number },
+      optionIndexes: { type: Array }
     };
   }
   constructor() {
     super();
-    this.name = '';
     this.legend = '';
+    this.name = '';
     this.options = 0;
     this.optionIndexes = [];
   }
@@ -26,7 +27,7 @@ class VaadinRadioGroup2 extends LitElement {
         ${this.optionIndexes.map(
           (i) => html`
             <label>
-              <input type="radio" name=${this.name} />
+              <input type="radio" name=${this.name}>
               <span>
                 <slot name="option-${i + 1}"></slot>
               </span>
@@ -36,7 +37,6 @@ class VaadinRadioGroup2 extends LitElement {
       </fieldset>
     `;
   }
-
   updated(props) {
     props.forEach((_, name) => {
       if (name === 'options') {

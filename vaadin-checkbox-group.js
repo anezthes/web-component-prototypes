@@ -10,10 +10,7 @@ class VaadinCheckboxGroup extends LitElement {
     this.legend = '';
   }
   static get styles() {
-    return [
-      vaadinCheckboxGroupStyles,
-      css``
-    ]
+    return [vaadinCheckboxGroupStyles, css``]
   }
   render() {
     return html`

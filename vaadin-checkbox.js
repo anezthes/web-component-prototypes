@@ -3,10 +3,7 @@ import { vaadinCheckboxStyles } from './vaadin-checkbox-styles.js';
 
 class VaadinCheckbox extends LitElement {
   static get styles() {
-    return [
-      vaadinCheckboxStyles,
-      css``
-    ]
+    return [vaadinCheckboxStyles, css``]
   }
   render() {
     return html`
