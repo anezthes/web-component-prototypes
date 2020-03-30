@@ -7,4 +7,4 @@ Web Components with a focus on accessibility. For testing purposes only.
 2. `npm install lit-element`
 3. `npm i @vaadin/vaadin-lumo-styles`
 4. `npm i @polymer/iron-icon`
-5. `polymer serve
+5. `polymer serve`
