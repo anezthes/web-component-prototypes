@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Vaadin: Web Component Prototypes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="Testing and prototyping web components.">
-  <script type="module">
+  <head>
+    <title>Vaadin: Web Component Prototypes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="Testing and prototyping web components." />
+    <script type="module">
       import '@polymer/iron-icon/iron-icon.js';
       import '@vaadin/vaadin-lumo-styles/icons.js';
       import '/vaadin-button.js';
@@ -13,64 +12,62 @@
       import '/vaadin-checkbox-group.js';
       import '/vaadin-radio-group-1.js';
       import '/vaadin-radio-group-2.js';
-  </script>
-  <style>
-    html {
-      --lumo-clickable-cursor: pointer !important;
-      --lumo-primary-color: hsl(214, 90%, 47%)!important;
-      --lumo-primary-text-color: hsl(214, 90%, 47%)!important;
-      --lumo-success-color: hsl(145, 80%, 29%)!important;
-    }
-  </style>
-</head>
+    </script>
+    <style>
+      html {
+        --lumo-clickable-cursor: pointer !important;
+        --lumo-primary-color: hsl(214, 90%, 47%) !important;
+        --lumo-primary-text-color: hsl(214, 90%, 47%) !important;
+        --lumo-success-color: hsl(145, 80%, 29%) !important;
+      }
+    </style>
+  </head>
 
-<body>
-  <h1>Alternative Vaadin Components</h1>
-  <section>
-    <h2>Buttons</h2>
-    <vaadin-button>Secondary</vaadin-button>
-    <hr>
-    <vaadin-button theme="primary">Primary</vaadin-button>
-    <vaadin-button theme="tertiary">Tertiary</vaadin-button>
-    <vaadin-button theme="tertiary-inline">Tertiary Inline</vaadin-button>
-    <hr>
-    <vaadin-button theme="contrast primary">Primary</vaadin-button>
-    <vaadin-button theme="contrast">Secondary</vaadin-button>
-    <vaadin-button theme="contrast tertiary">Tertiary</vaadin-button>
-    <hr>
-    <vaadin-button theme="success primary">Primary</vaadin-button>
-    <vaadin-button theme="success">Secondary</vaadin-button>
-    <vaadin-button theme="success tertiary">Tertiary</vaadin-button>
-    <hr>
-    <vaadin-button theme="error primary">Primary</vaadin-button>
-    <vaadin-button theme="error">Secondary</vaadin-button>
-    <vaadin-button theme="error tertiary">Tertiary</vaadin-button>
-    <hr>
-    <vaadin-button theme="large">Large</vaadin-button>
-    <vaadin-button theme="small">Small</vaadin-button>
-    <hr>
-    <vaadin-button><iron-icon icon="lumo:edit" slot="prefix"></iron-icon>Small</vaadin-button>
-    <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Small</vaadin-button>
-  </section>
-  <section>
-    <h2>Checkboxes</h2>
-    <vaadin-checkbox>Single checkbox</vaadin-checkbox>
-    <hr>
-    <vaadin-checkbox-group legend="Which consoles do you own?">
-      <vaadin-checkbox>PlayStation</vaadin-checkbox>
-      <vaadin-checkbox>Xbox</vaadin-checkbox>
-      <vaadin-checkbox>Wii</vaadin-checkbox>
-    </vaadin-checkbox-group>
-  </section>
-  <section>
-    <h2>Radio buttons</h2>
-    <vaadin-radio-group-1 legend="Which science fiction media franchise do you prefer?" options='["Star Wars", "Star Trek", "Stargate"]'>
-    </vaadin-radio-group-1>
-    <vaadin-radio-group-2 legend="Which science fiction media franchise do you prefer?" options='["1", "2"]'>
-      <div slot="child-0">Random shit</div>
-      <button slot="child-1">More random</button>
-    </vaadin-radio-group-2>
-  </section>
-</body>
-
+  <body>
+    <h1>Alternative Vaadin Components</h1>
+    <section>
+      <h2>Buttons</h2>
+      <vaadin-button>Secondary</vaadin-button>
+      <hr />
+      <vaadin-button theme="primary">Primary</vaadin-button>
+      <vaadin-button theme="tertiary">Tertiary</vaadin-button>
+      <vaadin-button theme="tertiary-inline">Tertiary Inline</vaadin-button>
+      <hr />
+      <vaadin-button theme="contrast primary">Primary</vaadin-button>
+      <vaadin-button theme="contrast">Secondary</vaadin-button>
+      <vaadin-button theme="contrast tertiary">Tertiary</vaadin-button>
+      <hr />
+      <vaadin-button theme="success primary">Primary</vaadin-button>
+      <vaadin-button theme="success">Secondary</vaadin-button>
+      <vaadin-button theme="success tertiary">Tertiary</vaadin-button>
+      <hr />
+      <vaadin-button theme="error primary">Primary</vaadin-button>
+      <vaadin-button theme="error">Secondary</vaadin-button>
+      <vaadin-button theme="error tertiary">Tertiary</vaadin-button>
+      <hr />
+      <vaadin-button theme="large">Large</vaadin-button>
+      <vaadin-button theme="small">Small</vaadin-button>
+      <hr />
+      <vaadin-button><iron-icon icon="lumo:edit" slot="prefix"></iron-icon>Small</vaadin-button>
+      <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Small</vaadin-button>
+    </section>
+    <section>
+      <h2>Checkboxes</h2>
+      <vaadin-checkbox>Single checkbox</vaadin-checkbox>
+      <hr />
+      <vaadin-checkbox-group legend="Which consoles do you own?">
+        <vaadin-checkbox>PlayStation</vaadin-checkbox>
+        <vaadin-checkbox>Xbox</vaadin-checkbox>
+        <vaadin-checkbox>Wii</vaadin-checkbox>
+      </vaadin-checkbox-group>
+    </section>
+    <section>
+      <h2>Radio buttons</h2>
+      <vaadin-radio-group-1 legend="Which science fiction media franchise do you prefer?" options='["Star Wars", "Star Trek", "Stargate"]'> </vaadin-radio-group-1>
+      <vaadin-radio-group-2 legend="Which science fiction media franchise do you prefer?" options="2">
+        <div slot="child-0">Random shit</div>
+        <button slot="child-1">More random</button>
+      </vaadin-radio-group-2>
+    </section>
+  </body>
 </html>
