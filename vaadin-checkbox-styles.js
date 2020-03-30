@@ -17,10 +17,8 @@ export const vaadinCheckboxStyles = css`
   }
 
   label {
-    align-items: center;
     cursor: var(--lumo-clickable-cursor);
     display: inline-flex;
-    min-height: var(--lumo-size-m);
   }
 
   input {

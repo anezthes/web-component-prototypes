@@ -27,4 +27,8 @@ export const vaadinCheckboxGroupStyles = css`
     font-size: var(--lumo-font-size-s);
     margin-bottom: var(--lumo-space-xs);
   }
+
+  ::slotted(vaadin-checkbox) {
+    margin-bottom: var(--lumo-space-s);
+  }
 `;

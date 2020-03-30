@@ -31,10 +31,8 @@ export const vaadinRadioGroupStyles = css`
   }
 
   label {
-    align-items: center;
     cursor: var(--lumo-clickable-cursor);
     display: inline-flex;
-    min-height: var(--lumo-size-m);
   }
 
   input {
@@ -51,6 +49,7 @@ export const vaadinRadioGroupStyles = css`
   span {
     display: inline-flex;
     user-select: none;
+    margin-bottom: var(--lumo-space-s);
     position: relative;
   }
 
