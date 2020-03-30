@@ -65,13 +65,21 @@
       <h2>Radio buttons</h2>
       <vaadin-radio-group-1
         legend="Which science fiction media franchise do you prefer?"
-        options='["Star Wars", "Star Trek", "Stargate"]'>
+        options='["Star Wars", "Star Trek", "Stargate"]'
+        name="radio-1">
       </vaadin-radio-group-1>
       <vaadin-radio-group-2
         legend="Which science fiction media franchise do you prefer?"
-        options='[1, 2]'>
-        <div slot="option-1">Random shit</div>
-        <button slot="option-2">More random</button>
+        options='[1, 2]'
+        name="radio-2">
+        <div slot="option-1">
+          <span>Star Wars</span>
+          <span>Luke Skywalker</span>
+        </div>
+        <div slot="option-2">
+          <span>Star Trek</span>
+          <span>Captain Picard</span>
+        </div>
       </vaadin-radio-group-2>
     </section>
   </body>

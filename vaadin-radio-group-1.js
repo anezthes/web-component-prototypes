@@ -4,12 +4,14 @@ import { vaadinRadioGroupStyles } from './vaadin-radio-group-styles.js';
 class VaadinRadioGroup1 extends LitElement {
   static get properties() { return {
     legend: { type: String },
-    options: { type: Array }
+    options: { type: Array },
+    name: { type: String }
   };}
   constructor() {
     super();
     this.legend = '';
     this.options = [];
+    this.name = '';
   }
   static get styles() {
     return [
@@ -23,7 +25,7 @@ class VaadinRadioGroup1 extends LitElement {
         <legend>${this.legend}</legend>
         ${this.options.map(option => html`
           <label>
-            <input type="radio" name="option">
+            <input type="radio" name=${this.name}>
             <span>${option}</span>
           </label>
         `)}
