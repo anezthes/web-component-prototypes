@@ -18,10 +18,12 @@
       import '/vaadin-checkbox-group.js';
       import '/vaadin-radio-button-1.js';
       import '/vaadin-radio-button-2.js';
+      import '/vaadin-radio-button-3.js';
       import '/vaadin-radio-group-1.js';
       import '/vaadin-radio-group-2.js';
       import '/vaadin-radio-group-3.js';
       import '/vaadin-radio-group-4.js';
+      import '/vaadin-radio-group-5.js';
     </script>
     <style>
       html {
@@ -194,6 +196,17 @@
           <hr>
           <vaadin-radio-button-2>Stargate</vaadin-radio-button-2>
         </vaadin-radio-group-4>
+      </section>
+      <section>
+        <vaadin-radio-group-5
+          aria-labelledby="legend"
+          role="radiogroup">
+          <label id="legend">Which science fiction media franchise do you prefer?</label>
+          <vaadin-radio-button-3 aria-checked="false" role="radio" tabindex="0">Star Wars</vaadin-radio-button-3>
+          <vaadin-radio-button-3 aria-checked="false" role="radio" tabindex="-1">Star Trek</vaadin-radio-button-3>
+          <hr>
+          <vaadin-radio-button-3 aria-checked="false" role="radio" tabindex="-1">Stargate</vaadin-radio-button-3>
+        </vaadin-radio-group-5>
       </section>
     </section>
   </body>
