@@ -1,17 +1,13 @@
 import { LitElement, html, css, property } from 'lit-element';
 import { vaadinRadioGroupStyles } from './vaadin-radio-group-styles.js';
 
-class VaadinRadioGroup1 extends LitElement {
+class VaadinRadioGroup3 extends LitElement {
   static get properties() { return {
-    legend: { type: String },
-    name: { type: String },
-    options: { type: Array }
+    legend: { type: String }
   };}
   constructor() {
     super();
     this.legend = '';
-    this.name = '';
-    this.options = [];
   }
   static get styles() {
     return [vaadinRadioGroupStyles, css``]
@@ -20,14 +16,9 @@ class VaadinRadioGroup1 extends LitElement {
     return html`
       <fieldset>
         <legend>${this.legend}</legend>
-        ${this.options.map(option => html`
-          <label>
-            <input type="radio" name="${this.name}">
-            <span>${option}</span>
-          </label>
-        `)}
+        <slot></slot>
       </fieldset>
     `;
   }
 }
-customElements.define('vaadin-radio-group-1', VaadinRadioGroup1);
+customElements.define('vaadin-radio-group-3', VaadinRadioGroup3);

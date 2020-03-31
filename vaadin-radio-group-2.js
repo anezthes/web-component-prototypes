@@ -1,5 +1,5 @@
-import {LitElement, html, css, property} from 'lit-element';
-import {vaadinRadioGroupStyles} from './vaadin-radio-group-styles.js';
+import { LitElement, html, css, property } from 'lit-element';
+import { vaadinRadioGroupStyles } from './vaadin-radio-group-styles.js';
 
 class VaadinRadioGroup2 extends LitElement {
   static get properties() {

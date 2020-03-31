@@ -16,8 +16,12 @@
       import '/vaadin-button.js';
       import '/vaadin-checkbox.js';
       import '/vaadin-checkbox-group.js';
+      import '/vaadin-radio-button-1.js';
+      import '/vaadin-radio-button-2.js';
       import '/vaadin-radio-group-1.js';
       import '/vaadin-radio-group-2.js';
+      import '/vaadin-radio-group-3.js';
+      import '/vaadin-radio-group-4.js';
     </script>
     <style>
       html {
@@ -141,11 +145,15 @@
       <section>
         <vaadin-radio-group-1
           legend="Which science fiction media franchise do you prefer?"
+          name="radio-1"
           options='["Star Wars", "Star Trek", "Stargate"]'>
         </vaadin-radio-group-1>
       </section>
       <section>
-        <vaadin-radio-group-2 legend="Which science fiction media franchise do you prefer?" options="3" name="radio-2">
+        <vaadin-radio-group-2
+          legend="Which science fiction media franchise do you prefer?"
+          options="3"
+          name="radio-2">
           <div slot="option-1" class="custom-radio-option">
             <img src="https://api.adorable.io/avatars/48/luke@adorable.io.png" alt="Luke's avatar" />
             <div>
@@ -168,6 +176,24 @@
             </div>
           </div>
         </vaadin-radio-group-2>
+      </section>
+      <section>
+        <vaadin-radio-group-3
+          legend="Which science fiction media franchise do you prefer?">
+          <vaadin-radio-button-1 name="radio-3">Star Wars</vaadin-radio-button-1>
+          <vaadin-radio-button-1 name="radio-3">Star Trek</vaadin-radio-button-1>
+          <hr>
+          <vaadin-radio-button-1 name="radio-3">Stargate</vaadin-radio-button-1>
+        </vaadin-radio-group-3>
+      </section>
+      <section>
+        <vaadin-radio-group-4
+          legend="Which science fiction media franchise do you prefer?">
+          <vaadin-radio-button-2>Star Wars</vaadin-radio-button-2>
+          <vaadin-radio-button-2>Star Trek</vaadin-radio-button-2>
+          <hr>
+          <vaadin-radio-button-2>Stargate</vaadin-radio-button-2>
+        </vaadin-radio-group-4>
       </section>
     </section>
   </body>

@@ -1,29 +1,13 @@
 import { css } from 'lit-element';
 
-export const vaadinRadioGroupStyles = css`
+export const vaadinRadioButtonStyles = css`
   :host {
-    --dot-size: calc(var(--lumo-size-xs) / 4);
     color: var(--lumo-body-text-color);
     display: inline-block;
     font-family: var(--lumo-font-family);
     font-size: var(--lumo-font-size-m);
     line-height: var(--lumo-line-height-m);
-  }
-
-  fieldset,
-  [role="radiogroup"] {
-    border: none;
-    display: inline-flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-
-  legend,
-  label#legend {
-    color: var(--lumo-secondary-text-color);
-    font-size: var(--lumo-font-size-s);
-    margin-bottom: var(--lumo-space-xs);
+    position: relative;
   }
 
   label {
