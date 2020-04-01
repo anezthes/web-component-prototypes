@@ -31,6 +31,10 @@ class HomeView extends LitElement {
         section[theme~="dark"] {
           padding: var(--lumo-space-m);
         }
+
+        section + section {
+          margin-top: var(--lumo-space-l);
+        }
       `
     ]
   }
