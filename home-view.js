@@ -19,6 +19,9 @@ class HomeView extends LitElement {
           --lumo-success-text-color: hsl(145, 100%, 25%);
           --lumo-error-color: hsl(3, 100%, 46%);
           --lumo-error-text-color: hsl(3, 92%, 44%);
+
+          display: block;
+          padding: 0 var(--lumo-space-m) var(--lumo-space-m) var(--lumo-space-m);
         }
 
         [theme~="dark"] {
@@ -28,12 +31,10 @@ class HomeView extends LitElement {
           --lumo-error-text-color: hsl(3, 100%, 74%);
         }
 
-        section[theme~="dark"] {
+        section section {
+          box-shadow: inset 0 0 0 1px var(--lumo-contrast-20pct);
+          margin: var(--lumo-space-m) 0 0 0;
           padding: var(--lumo-space-m);
-        }
-
-        section + section {
-          margin-top: var(--lumo-space-l);
         }
       `
     ]
@@ -98,7 +99,6 @@ class HomeView extends LitElement {
           <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Small</vaadin-button>
         </section>
       </section>
-      <hr />
       <section>
         <h2>Checkboxes</h2>
         <section>
@@ -112,7 +112,6 @@ class HomeView extends LitElement {
           </vaadin-checkbox-group>
         </section>
       </section>
-      <hr />
       <section>
         <h2>Radio buttons</h2>
         <section>

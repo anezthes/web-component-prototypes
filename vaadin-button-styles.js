@@ -18,7 +18,6 @@ export const vaadinButtonStyles = css`
     font-weight: 500;
     height: var(--lumo-button-size);
     line-height: var(--lumo-button-size);
-    margin: var(--lumo-space-xs) 0;
     min-width: calc(var(--lumo-button-size) * 2);
     padding: 0 calc(var(--lumo-button-size) / 3 + var(--lumo-border-radius) / 2);
     position: relative;
