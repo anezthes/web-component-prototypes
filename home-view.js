@@ -36,6 +36,30 @@ class HomeView extends LitElement {
           margin: var(--lumo-space-m) 0 0 0;
           padding: var(--lumo-space-m);
         }
+
+        .custom-radio-option {
+          align-items: flex-start;
+          display: flex;
+        }
+
+        .custom-radio-option img {
+          border-radius: 50%;
+          margin-right: var(--lumo-space-s);
+        }
+
+        .custom-radio-option div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .custom-radio-option span:first-child {
+          font-weight: 500;
+        }
+
+        .custom-radio-option span:last-child {
+          color: var(--lumo-secondary-text-color);
+          font-size: var(--lumo-font-size-s);
+        }
       `
     ]
   }
@@ -177,6 +201,16 @@ class HomeView extends LitElement {
             <hr>
             <vaadin-radio-button-3 aria-checked="false" role="radio" tabindex="-1">Stargate</vaadin-radio-button-3>
           </vaadin-radio-group-5>
+        </section>
+      </section>
+      <section>
+        <h2>List box</h2>
+        <section>
+          <vaadin-list-box>
+            <vaadin-item>Sub-Zero</vaadin-item>
+            <vaadin-item>Scorpion</vaadin-item>
+            <vaadin-item>Raiden</vaadin-item>
+          </vaadin-list-box>
         </section>
       </section>
     `;

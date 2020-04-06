@@ -1,17 +1,15 @@
 import { LitElement, html, css } from 'lit-element';
-import { vaadinRadioButtonStyles } from './vaadin-radio-button-styles.js';
+import { vaadinItemStyles } from './vaadin-item-styles.js';
 
-class VaadinRadioButton2 extends LitElement {
+class VaadinItem extends LitElement {
   static get styles() {
-    return [vaadinRadioButtonStyles, css``]
+    return [vaadinItemStyles, css``]
   }
   render() {
     return html`
-      <div id="focusElement" aria-checked="false" role="radio" tabindex="-1">
-        <span>
-          <slot></slot>
-        </span>
-      </div>
+      <li id="focusElement" role="option" tabindex="-1">
+        <slot></slot>
+      </li>
     `;
   }
   setTabIndex(value) {
@@ -24,4 +22,4 @@ class VaadinRadioButton2 extends LitElement {
     this.shadowRoot.getElementById('focusElement').focus();
   }
 }
-customElements.define('vaadin-radio-button-2', VaadinRadioButton2);
+customElements.define('vaadin-item', VaadinItem);

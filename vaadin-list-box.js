@@ -1,28 +1,25 @@
-import { LitElement, html, css, property } from 'lit-element';
-import { vaadinRadioGroupStyles } from './vaadin-radio-group-styles.js';
+import { LitElement, html, css } from 'lit-element';
+import { vaadinListBoxStyles } from './vaadin-list-box-styles.js';
 
-class VaadinRadioGroup4 extends LitElement {
+class VaadinListBox extends LitElement {
   static get properties() { return {
-    legend: { type: String },
     items: { type: Array }
   };}
 
   constructor() {
     super();
-    this.legend = '';
     this.items = [];
   }
 
   static get styles() {
-    return [vaadinRadioGroupStyles, css``]
+    return [vaadinListBoxStyles, css``]
   }
 
   render() {
     return html`
-      <div role="radiogroup" aria-labelledby="legend">
-        <label id="legend">${this.legend}</label>
+      <ul role="listbox">
         <slot></slot>
-      </div>
+      </ul>
     `;
   }
 
@@ -34,7 +31,7 @@ class VaadinRadioGroup4 extends LitElement {
     });
 
     this.addEventListener('click', event => {
-      const option = event.target.closest('vaadin-radio-button')
+      const option = event.target.closest('vaadin-item')
       if (!option) {
         return;
       }
@@ -68,10 +65,10 @@ class VaadinRadioGroup4 extends LitElement {
   filterItems() {
     this.items = [];
     for (var i = 0; i < this.children.length; i++) {
-      if (this.children[i].tagName.toLowerCase() == 'vaadin-radio-button-2') {
+      if (this.children[i].tagName.toLowerCase() == 'vaadin-item') {
         this.items.push(this.children[i]);
       }
     }
   }
 }
-customElements.define('vaadin-radio-group-4', VaadinRadioGroup4);
+customElements.define('vaadin-list-box', VaadinListBox);
