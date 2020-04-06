@@ -206,11 +206,18 @@ class HomeView extends LitElement {
       <section>
         <h2>List box</h2>
         <section>
-          <vaadin-list-box>
-            <vaadin-item>Sub-Zero</vaadin-item>
-            <vaadin-item>Scorpion</vaadin-item>
-            <vaadin-item>Raiden</vaadin-item>
-          </vaadin-list-box>
+          <vaadin-list-box-1>
+            <vaadin-item-1>Sub-Zero</vaadin-item-1>
+            <vaadin-item-1>Scorpion</vaadin-item-1>
+            <vaadin-item-1>Raiden</vaadin-item-1>
+          </vaadin-list-box-1>
+        </section>
+        <section>
+          <vaadin-list-box-2>
+            <vaadin-item-2>Sub-Zero</vaadin-item-2>
+            <vaadin-item-2>Scorpion</vaadin-item-2>
+            <vaadin-item-2>Raiden</vaadin-item-2>
+          </vaadin-list-box-2>
         </section>
       </section>
     `;

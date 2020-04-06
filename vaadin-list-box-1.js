@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
 import { vaadinListBoxStyles } from './vaadin-list-box-styles.js';
 
-class VaadinListBox extends LitElement {
+class VaadinListBox1 extends LitElement {
   static get properties() { return {
     items: { type: Array }
   };}
@@ -31,7 +31,7 @@ class VaadinListBox extends LitElement {
     });
 
     this.addEventListener('click', event => {
-      const option = event.target.closest('vaadin-item')
+      const option = event.target.closest('vaadin-item-1')
       if (!option) {
         return;
       }
@@ -65,10 +65,10 @@ class VaadinListBox extends LitElement {
   filterItems() {
     this.items = [];
     for (var i = 0; i < this.children.length; i++) {
-      if (this.children[i].tagName.toLowerCase() == 'vaadin-item') {
+      if (this.children[i].tagName.toLowerCase() == 'vaadin-item-1') {
         this.items.push(this.children[i]);
       }
     }
   }
 }
-customElements.define('vaadin-list-box', VaadinListBox);
+customElements.define('vaadin-list-box-1', VaadinListBox1);

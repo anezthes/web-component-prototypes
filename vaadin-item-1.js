@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
 import { vaadinItemStyles } from './vaadin-item-styles.js';
 
-class VaadinItem extends LitElement {
+class VaadinItem1 extends LitElement {
   static get styles() {
     return [vaadinItemStyles, css``]
   }
@@ -22,4 +22,4 @@ class VaadinItem extends LitElement {
     this.shadowRoot.getElementById('focusElement').focus();
   }
 }
-customElements.define('vaadin-item', VaadinItem);
+customElements.define('vaadin-item-1', VaadinItem1);
