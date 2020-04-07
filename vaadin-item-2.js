@@ -13,8 +13,8 @@ class VaadinItem2 extends LitElement {
     `;
   }
   firstUpdated() {
-    this.setAttribute("role", "option");
-    this.setAttribute("tabIndex", "-1")
+    this.setAttribute('role', 'option');
+    this.setAttribute('tabIndex', '-1')
   }
 }
 customElements.define('vaadin-item-2', VaadinItem2);

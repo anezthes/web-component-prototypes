@@ -119,8 +119,11 @@ class HomeView extends LitElement {
           <vaadin-button theme="small">Small</vaadin-button>
         </section>
         <section>
-          <vaadin-button><iron-icon icon="lumo:edit" slot="prefix"></iron-icon>Small</vaadin-button>
-          <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Small</vaadin-button>
+          <vaadin-button><iron-icon icon="lumo:edit" slot="prefix"></iron-icon>Prefix</vaadin-button>
+          <vaadin-button><iron-icon icon="lumo:edit" slot="suffix"></iron-icon>Suffix</vaadin-button>
+        </section>
+        <section>
+          <vaadin-button theme="icon" label="Edit"><iron-icon icon="lumo:edit"></iron-icon></vaadin-button>
         </section>
       </section>
       <section>
@@ -218,6 +221,15 @@ class HomeView extends LitElement {
             <vaadin-item-2>Scorpion</vaadin-item-2>
             <vaadin-item-2>Raiden</vaadin-item-2>
           </vaadin-list-box-2>
+        </section>
+      </section>
+      <section>
+        <h2>Upload</h2>
+        <section>
+          <vaadin-upload>
+            <vaadin-upload-file filename="Filename.pdf" status="Uploading..." value="50"></vaadin-upload-file>
+            <vaadin-upload-file filename="Filename.pdf" status="" value="100"></vaadin-upload-file>
+          </vaadin-upload>
         </section>
       </section>
     `;

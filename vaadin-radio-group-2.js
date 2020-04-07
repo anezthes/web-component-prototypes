@@ -27,7 +27,7 @@ class VaadinRadioGroup2 extends LitElement {
         ${this.optionIndexes.map(
           (i) => html`
             <label>
-              <input type="radio" name=${this.name}>
+              <input type="radio" name="${this.name}">
               <span>
                 <slot name="option-${i + 1}"></slot>
               </span>

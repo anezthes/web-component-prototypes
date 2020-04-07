@@ -5,6 +5,10 @@ export const vaadinButtonStyles = css`
     display: inline-block;
   }
 
+  :host([hidden]) {
+    display: none;
+  }
+
   button {
     --lumo-button-size: var(--lumo-size-m);
     background-color: var(--lumo-contrast-5pct);
@@ -24,10 +28,6 @@ export const vaadinButtonStyles = css`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
-  }
-
-  button span {
-    display: inline-block;
   }
 
   /* Sizes */
@@ -209,11 +209,15 @@ export const vaadinButtonStyles = css`
     width: var(--lumo-icon-size-m);
   }
 
-  [part='prefix'] {
+  :host([theme~='tertiary-inline']) ::slotted(iron-icon) {
+    margin-top: 0;
+  }
+
+  ::slotted(iron-icon[slot='prefix']) {
     margin-left: calc(var(--lumo-space-xs) * -1);
   }
 
-  [part='suffix'] {
+  ::slotted(iron-icon[slot='suffix']) {
     margin-right: calc(var(--lumo-space-xs) * -1);
   }
 

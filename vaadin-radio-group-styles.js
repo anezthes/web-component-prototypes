@@ -20,7 +20,8 @@ export const vaadinRadioGroupStyles = css`
   }
 
   legend,
-  label#legend {
+  label#legend,
+  ::slotted(label#legend) {
     color: var(--lumo-secondary-text-color);
     font-size: var(--lumo-font-size-s);
     margin-bottom: var(--lumo-space-xs);

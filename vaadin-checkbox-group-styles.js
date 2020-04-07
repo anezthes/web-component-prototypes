@@ -2,6 +2,7 @@ import { css } from 'lit-element';
 
 export const vaadinCheckboxGroupStyles = css`
   :host {
+    color: var(--lumo-body-text-color);
     display: inline-block;
     font-family: var(--lumo-font-family);
     font-size: var(--lumo-font-size-m);
