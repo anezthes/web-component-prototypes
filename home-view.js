@@ -228,7 +228,10 @@ class HomeView extends LitElement {
       <section>
         <h2>Upload</h2>
         <section>
-
+          <vaadin-upload>
+            <vaadin-upload-file filename="Filename.pdf" status="Uploading..." value="50"></vaadin-upload-file>
+            <vaadin-upload-file filename="Filename.pdf" status="" value="100"></vaadin-upload-file>
+          </vaadin-upload>
         </section>
       </section>
     `;
