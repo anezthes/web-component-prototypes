@@ -17,13 +17,13 @@ class VaadinListBox2 extends LitElement {
 
   render() {
     return html`
-      <ul role="listbox">
-        <slot></slot>
-      </ul>
+      <slot></slot>
     `;
   }
 
   firstUpdated() {
+    this.setAttribute('role', 'listbox');
+
     this.filterItems();
 
     this.shadowRoot.querySelector('slot').addEventListener('slotchange', event => {

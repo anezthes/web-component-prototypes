@@ -7,9 +7,7 @@ class VaadinItem2 extends LitElement {
   }
   render() {
     return html`
-      <li>
-        <slot></slot>
-      </li>
+      <slot></slot>
     `;
   }
   firstUpdated() {

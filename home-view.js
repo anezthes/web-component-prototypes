@@ -208,6 +208,7 @@ class HomeView extends LitElement {
       </section>
       <section>
         <h2>List box</h2>
+        <!--
         <section>
           <vaadin-list-box-1>
             <vaadin-item-1>Sub-Zero</vaadin-item-1>
@@ -215,6 +216,7 @@ class HomeView extends LitElement {
             <vaadin-item-1>Raiden</vaadin-item-1>
           </vaadin-list-box-1>
         </section>
+        -->
         <section>
           <vaadin-list-box-2>
             <vaadin-item-2>Sub-Zero</vaadin-item-2>
@@ -226,10 +228,7 @@ class HomeView extends LitElement {
       <section>
         <h2>Upload</h2>
         <section>
-          <vaadin-upload>
-            <vaadin-upload-file filename="Filename.pdf" status="Uploading..." value="50"></vaadin-upload-file>
-            <vaadin-upload-file filename="Filename.pdf" status="" value="100"></vaadin-upload-file>
-          </vaadin-upload>
+
         </section>
       </section>
     `;
