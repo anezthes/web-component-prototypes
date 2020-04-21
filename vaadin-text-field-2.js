@@ -25,7 +25,7 @@ class VaadinTextField2 extends LitElement {
     return html`
         <label for="input">
           ${this.label}
-          ${this.required ? html`<span>*</span>` : html``}
+          ${this.required ? html`<span aria-hidden="true">*</span>` : html``}
         </label>
         <div id="input-wrapper">
           <slot name="prefix"></slot>
