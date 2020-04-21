@@ -234,8 +234,14 @@ class HomeView extends LitElement {
       </section>
       <section>
         <h2>Text Field</h2>
-        <vaadin-text-field label="First name" error="Cannot be empty" value="John" required></vaadin-text-field>
-        <vaadin-text-field label="Last name" value="Smith"></vaadin-text-field>
+        <section>
+          <vaadin-text-field-1 label="First name" error="Cannot be empty" value="John" required></vaadin-text-field-1>
+          <vaadin-text-field-1 label="Last name" value="Smith"></vaadin-text-field-1>
+        </section>
+        <section>
+          <vaadin-text-field-2 label="First name" error="Cannot be empty" value="John" required></vaadin-text-field-2>
+          <vaadin-text-field-2 label="Last name" value="Smith"></vaadin-text-field-2>
+        </section>
       </section>
     `;
   }

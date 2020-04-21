@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
 import { vaadinTextFieldStyles } from './vaadin-text-field-styles.js';
 
-class VaadinTextField extends LitElement {
+class VaadinTextField2 extends LitElement {
   static get properties() { return {
     label: { type: String },
     value: { type: String },
@@ -40,9 +40,9 @@ class VaadinTextField extends LitElement {
     var input = this.shadowRoot.querySelector('#input');
 
     if (this.required) {
-      input.setAttribute('required', '');
+      input.setAttribute('aria-required', 'true');
     } else {
-      input.removeAttribute('required');
+      input.removeAttribute('aria-required');
     }
 
     input.addEventListener('focus', event => {
@@ -54,4 +54,4 @@ class VaadinTextField extends LitElement {
     });
   }
 }
-customElements.define('vaadin-text-field', VaadinTextField);
+customElements.define('vaadin-text-field-2', VaadinTextField2);
