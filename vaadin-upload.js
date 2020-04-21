@@ -28,8 +28,8 @@ class VaadinUpload extends LitElement {
           <span>${this.dndText}</span>
         </div>
       </div>
-      <input type="file"></input>
-      <ul id="file-list">
+      <input type="file">
+      <ul id="filelist">
         <slot></slot>
       </ul>
     `;

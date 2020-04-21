@@ -66,7 +66,7 @@ class HomeView extends LitElement {
   render() {
     return html`
       <h1>Vaadin: Web Component Prototypes</h1>
-      <section>
+      <section hidden>
         <h2>Badges</h2>
         <section>
           <span theme="badge">Normal</span>
@@ -89,7 +89,7 @@ class HomeView extends LitElement {
           <span theme="badge contrast primary">Contrast</span>
         </section>
       </section>
-      <section>
+      <section hidden>
         <h2>Buttons</h2>
         <section>
           <vaadin-button>Secondary</vaadin-button>
@@ -126,7 +126,7 @@ class HomeView extends LitElement {
           <vaadin-button theme="icon" label="Edit"><iron-icon icon="lumo:edit"></iron-icon></vaadin-button>
         </section>
       </section>
-      <section>
+      <section hidden>
         <h2>Checkboxes</h2>
         <section>
           <vaadin-checkbox>Single checkbox</vaadin-checkbox>
@@ -139,7 +139,7 @@ class HomeView extends LitElement {
           </vaadin-checkbox-group>
         </section>
       </section>
-      <section>
+      <section hidden>
         <h2>Radio buttons</h2>
         <section>
           <vaadin-radio-group-1
@@ -206,9 +206,8 @@ class HomeView extends LitElement {
           </vaadin-radio-group-5>
         </section>
       </section>
-      <section>
+      <section hidden>
         <h2>List box</h2>
-        <!--
         <section>
           <vaadin-list-box-1>
             <vaadin-item-1>Sub-Zero</vaadin-item-1>
@@ -216,7 +215,6 @@ class HomeView extends LitElement {
             <vaadin-item-1>Raiden</vaadin-item-1>
           </vaadin-list-box-1>
         </section>
-        -->
         <section>
           <vaadin-list-box-2>
             <vaadin-item-2>Sub-Zero</vaadin-item-2>
@@ -225,7 +223,7 @@ class HomeView extends LitElement {
           </vaadin-list-box-2>
         </section>
       </section>
-      <section>
+      <section hidden>
         <h2>Upload</h2>
         <section>
           <vaadin-upload>
@@ -233,6 +231,11 @@ class HomeView extends LitElement {
             <vaadin-upload-file filename="Filename.pdf" status="" value="100"></vaadin-upload-file>
           </vaadin-upload>
         </section>
+      </section>
+      <section>
+        <h2>Text Field</h2>
+        <vaadin-text-field label="First name" error="Cannot be empty" value="John" required></vaadin-text-field>
+        <vaadin-text-field label="Last name" value="Smith"></vaadin-text-field>
       </section>
     `;
   }
