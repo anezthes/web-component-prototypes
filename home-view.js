@@ -243,6 +243,15 @@ class HomeView extends LitElement {
           <vaadin-text-field-2 label="Last name" value="Smith"></vaadin-text-field-2>
         </section>
       </section>
+      <section>
+        <h2>Date Picker</h2>
+        <section>
+          <vaadin-date-picker-1 label="Birthdate" value="01/01/2020"></vaadin-date-picker-1>
+          <vaadin-date-picker-2 label="Birthdate" value="01/01/2020">
+            <vaadin-button theme="icon tertiary" label="Edit" slot="suffix"><iron-icon icon="lumo:calendar"></iron-icon></vaadin-button>
+          </vaadin-date-picker-2>
+        </section>
+      </section>
     `;
   }
 }
