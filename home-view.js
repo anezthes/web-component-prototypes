@@ -66,7 +66,7 @@ class HomeView extends LitElement {
   render() {
     return html`
       <h1>Vaadin: Web Component Prototypes</h1>
-      <section hidden>
+      <section>
         <h2>Badges</h2>
         <section>
           <span theme="badge">Normal</span>
@@ -89,7 +89,7 @@ class HomeView extends LitElement {
           <span theme="badge contrast primary">Contrast</span>
         </section>
       </section>
-      <section hidden>
+      <section>
         <h2>Buttons</h2>
         <section>
           <vaadin-button>Secondary</vaadin-button>
@@ -126,7 +126,7 @@ class HomeView extends LitElement {
           <vaadin-button theme="icon" label="Edit"><iron-icon icon="lumo:edit"></iron-icon></vaadin-button>
         </section>
       </section>
-      <section hidden>
+      <section>
         <h2>Checkboxes</h2>
         <section>
           <vaadin-checkbox>Single checkbox</vaadin-checkbox>
@@ -139,7 +139,7 @@ class HomeView extends LitElement {
           </vaadin-checkbox-group>
         </section>
       </section>
-      <section hidden>
+      <section>
         <h2>Radio buttons</h2>
         <section>
           <vaadin-radio-group-1
@@ -206,7 +206,7 @@ class HomeView extends LitElement {
           </vaadin-radio-group-5>
         </section>
       </section>
-      <section hidden>
+      <section>
         <h2>List box</h2>
         <section>
           <vaadin-list-box-1>
@@ -223,7 +223,7 @@ class HomeView extends LitElement {
           </vaadin-list-box-2>
         </section>
       </section>
-      <section hidden>
+      <section>
         <h2>Upload</h2>
         <section>
           <vaadin-upload>
